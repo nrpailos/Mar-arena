@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.titulo {
+    text-align: center;
+    margin: 2%;
+}
+
+.contact-container {
+    display: flex;
+    margin: auto;
+    margin-top: 3%;
+    max-width: 50%;
+}
+
+.imagenContact img {
+    width: 90%;
+    /* Ajusta otros estilos según sea necesario */
+}
+
+.contacts {
+    /* Puedes ajustar el ancho del div de contactos según tus necesidades */
+    width: 50%;
+    padding: 20px;
+    /* Agrega un relleno según sea necesario */
+}
+
+.contacts a {
+    text-decoration: none;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.contact img {
+    /* Estilos para las imágenes de contacto */
+    width: 30px;
+    /* Ajusta el ancho según tus necesidades */
+
+}

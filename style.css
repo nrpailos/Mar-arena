@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.slider-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+.sections {
+    display: flex;
+    justify-content: center;
+}
+
+.section {
+    margin: 2%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section img {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 400px) {
+    .sections {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
