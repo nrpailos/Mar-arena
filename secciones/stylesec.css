@@ -9,23 +9,21 @@ body {
     margin: 2%;
 }
 
+
+.logo {
+    width: 100px;
+}
+
 .contact-container {
     display: flex;
-    margin: auto;
-    margin-top: 3%;
-    max-width: 50%;
+    text-align: center;
 }
 
-.imagenContact img {
-    width: 90%;
-    /* Ajusta otros estilos según sea necesario */
-}
 
 .contacts {
-    /* Puedes ajustar el ancho del div de contactos según tus necesidades */
-    width: 50%;
-    padding: 20px;
-    /* Agrega un relleno según sea necesario */
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 .contacts a {
@@ -35,12 +33,11 @@ body {
 .contact {
     display: flex;
     align-items: center;
+    margin: 20px;
 }
 
 .contact img {
-    /* Estilos para las imágenes de contacto */
     width: 30px;
-    /* Ajusta el ancho según tus necesidades */
 
 }
 
@@ -49,4 +46,33 @@ body {
     align-items: center;
     margin: auto;
     max-width: 50%;
+}
+
+.container-reels {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+}
+
+.reel {
+    margin: 2%;
+}
+
+#miFormulario {
+    display: block;
+}
+
+.container-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.form-button {
+    text-align: center;
 }

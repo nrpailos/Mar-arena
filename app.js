@@ -16,3 +16,15 @@ document.addEventListener('DOMContentLoaded', function () {
     setInterval(slide, 3000);
 });
 
+document.getElementById("miFormulario").addEventListener("submit", function (event) {
+    event.preventDefault(); // Evitar el envío del formulario por defecto
+
+    // Obtener los valores de los campos
+    let nombre = document.getElementById("nombre").value;
+    let email = document.getElementById("email").value;
+
+    // Mostrar los valores en la consola
+    console.log("Nombre: " + nombre);
+    console.log("Correo electrónico: " + email);
+});
+
