@@ -1,35 +1,14 @@
-// document.addEventListener('DOMContentLoaded', function () {
-//     const slider = document.querySelector('.slider');
-//     let counter = 1;
+let sliderInner = document.querySelector(".slider-inner");
+let imagenes = sliderInner.querySelectorAll("img")
 
-//     function slide() {
-//         if (counter < slider.children.length - 1) {
-//             counter++;
-//         } else {
-//             counter = 1;
-//         }
+let index = 1;
 
-//         slider.style.transition = 'transform 0.5s';
-//         slider.style.transform = `translateX(${-counter * 100}%)`;
-//     }
+setInterval(function () {
+    let percentage = index * -100;
+    sliderInner.style.transform = "translateX(" + percentage + "%)";
+    index++;
 
-//     setInterval(slide, 3000);
-// });
-
-
-
-
-
-
-document.getElementById("miFormulario").addEventListener("submit", function (event) {
-    event.preventDefault(); // Evitar el envío del formulario por defecto
-
-    // Obtener los valores de los campos
-    let nombre = document.getElementById("nombre").value;
-    let email = document.getElementById("email").value;
-
-    // Mostrar los valores en la consola
-    console.log("Nombre: " + nombre);
-    console.log("Correo electrónico: " + email);
-});
-
+    if (index > imagenes.length - 1) {
+        index = 0;
+    }
+}, 3000);
