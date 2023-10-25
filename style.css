@@ -1,11 +1,15 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
+}
+
+.navbar-brand {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
 }
 
 .logo {
-    width: 100px;
+    width: 150px;
 }
 
 .slider {
@@ -22,6 +26,8 @@ body {
     transition: all 0.5s ease-in-out;
 
 }
+
+
 
 .slider-inner img {
     aspect-ratio: 16/9;
@@ -52,11 +58,12 @@ img {
     color: #333;
 }
 
+
 .section-inner img {
     display: flex;
     overflow: hidden;
     object-fit: cover;
-    max-width: 400px;
+    max-width: 430px;
     aspect-ratio: 2/1;
-    margin: auto;
+
 }
