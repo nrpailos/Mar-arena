@@ -1,3 +1,20 @@
+const nav = document.querySelector("#nav");
+const abrir = document.querySelector("#abrir");
+const cerrar = document.querySelector("#cerrar");
+
+abrir.addEventListener("click", () => {
+    nav.classList.add("visible");
+    document.querySelector(".abrir-menu").style.color = '#ececec';
+
+})
+document.querySelector(".abrir-menu")
+cerrar.addEventListener("click", () => {
+    nav.classList.remove("visible");
+    document.querySelector(".abrir-menu").style.color = 'black';
+})
+
+
+
 let sliderInner = document.querySelector(".slider-inner");
 let imagenes = sliderInner.querySelectorAll("img")
 

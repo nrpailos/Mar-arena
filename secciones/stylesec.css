@@ -1,78 +1,29 @@
-body {
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
 }
 
-.titulo {
+
+.titulo-reels {
+    margin-top: 5em;
     text-align: center;
-    margin: 2%;
-}
-
-
-.logo {
-    width: 100px;
-}
-
-.contact-container {
-    display: flex;
-    text-align: center;
-}
-
-
-.contacts {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-
-.contacts a {
-    text-decoration: none;
-}
-
-.contact {
-    display: flex;
-    align-items: center;
-    margin: 20px;
-}
-
-.contact img {
-    width: 30px;
-
-}
-
-.about {
-    display: flex;
-    align-items: center;
-    margin: auto;
-    max-width: 50%;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Noto Serif JP', serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Tilt Neon', sans-serif;
+    letter-spacing: 2px;
+    padding: 2rem;
+    font-size: 20px;
 }
 
 .container-reels {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 1%;
 }
 
 .reel {
-    margin: 2%;
-}
-
-#miFormulario {
-    display: block;
-}
-
-.container-form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-}
-
-.form-button {
-    text-align: center;
+    flex-grow: 100;
+    flex-basis: auto;
+    width: 400px;
+    margin: 1em;
 }

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Serif+JP:wght@200&family=Quicksand:wght@300&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Serif+JP:wght@200&family=Quicksand:wght@300&family=Tilt+Neon&display=swap');
+
+main h2 {
+    text-align: center;
+    margin-top: 8rem;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Noto Serif JP', serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Tilt Neon', sans-serif;
+    font-size: 40px;
+
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    flex-wrap: wrap;
+
+}
+
+.icons-container {
+    width: 30%;
+    height: auto;
+
+}
+
+
+.form-container {
+    margin: 3em;
+
+}
+
+.icon {
+    margin: 30px;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Noto Serif JP', serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+.icon a {
+    text-decoration: none;
+    color: black;
+}
+
+svg {
+    margin-right: 1rem;
+    fill: #1D2D50;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+
+input {
+    border: 0;
+}
+
+textarea {
+    border: 0;
+}
+
+.entradas {
+    margin: 30px;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Noto Serif JP', serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Tilt Neon', sans-serif;
+    border-bottom: 0.5px solid black;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    padding: 7px;
+    cursor: pointer;
+
+}
+
+.button-send {
+    text-align: end;
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+    main h2 {
+        font-size: 20px;
+        font-size: small;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .icons-container {
+        width: 100%;
+    }
+}

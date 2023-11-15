@@ -5,59 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mar Arena</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <img class="logo" src="./pic/LogoMaca-removebg-preview.png" alt="">
-            <a class="navbar-brand fst-italic" href="./index.html">Mar Arena</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-absolute bottom-0 end-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./secciones/about.html">About me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./secciones/contact.html">Contact</a>
-                    </li>
-
-            </div>
+    <header>
+        <a href="./index.html"><img class="logo" src="./pic/LogoFinal.png" alt="Logo"></a>
+        <div class="titulo">
+            <h2>Mac Arena</h2>
+            <p> Fotografia y Videografia</p>
         </div>
-    </nav>
+        <button id="abrir" class="abrir-menu"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" viewBox="0 0 16 16">
+                    <path
+                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                </svg></button>
+            <ul class="nav-list">
+                <li><a href="./secciones/about.html">Yo soy Mac Arena</a></li>
+                <li><a href="./secciones/Producciones/indexProdu.html">Fotografías</a></li>
+                <li><a href="./secciones/contact.html">Contactame</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="slider">
         <div class="slider-inner">
-            <img src="./pic/hugo.jpg" alt="Surf">
-            <img src="./pic/DSC_8949.jpg" alt="Surf">
-            <img src="./pic/k.jpg" alt="Surf">
-            <img src="./pic/DSC_0156.JPG" alt="Surf">
+            <img src="./pic/Slide/DSC_0081.jpg" alt="Surf">
+            <img src="./pic/Slide/DSC_8949.jpg" alt="Surf">
+            <img src="./pic/Slide/hugo.jpg" alt="Surf">
+            <img src="./pic/Slide/k.jpg" alt="Surf">
+            <img src="./pic/Slide/thami.jpg" alt="Surf">
         </div>
+
     </div>
 
-    <section class=" section-container">
-        <div class="section-inner">
-            <a href="./secciones/reels.html"> Reels <img src="./pic/DSC_0081.jpg" alt=""></a>
-            <a href="#">Escuelitas de Surf <img src="./pic/DSC_4573.jpg" alt=""></a>
-            <a href="#">Producciones<img src="./pic/DSC_0163.jpg" alt=""></a>
-        </div>
-    </section>
+    <div class="btn-flotante"> <a href="https://wa.me/1521894469"><img src="./pic/whatsapp (1).png" alt="">
+    </div>
+    <footer> Instagram - Gmail - Whatsapp</footer>
 
 
-    <div> <br></div>
-
-
-    <link href=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./style.css">
     <script src="./app.js"></script>
 
 </body>

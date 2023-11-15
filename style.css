@@ -1,21 +1,84 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Serif+JP:wght@200&family=Quicksand:wght@300&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Serif+JP:wght@200&family=Quicksand:wght@300&family=Tilt+Neon&display=swap');
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.navbar-brand {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 50px;
-}
 
 .logo {
-    width: 150px;
+    width: 100px;
+    margin: 1.5em;
+}
+
+.titulo h2 {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Noto Serif JP', serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Tilt Neon', sans-serif;
+    font-size: 40px;
+}
+
+.titulo h3 {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Noto Serif JP', serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Tilt Neon', sans-serif;
+    font-size: 45px;
+}
+
+.titulo p {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Noto Serif JP', serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Tilt Neon', sans-serif;
+    margin-left: 25px;
+}
+
+header {
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ececec;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 7rem;
+    opacity: 80%;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #1c1c1c;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Noto Serif JP', serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Tilt Neon', sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.nav-list li a:hover {
+    border-bottom: 2px solid #1F6F8B;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
 }
 
 .slider {
-    width: 90%;
+    width: 100%;
     overflow: hidden;
-    margin: 0 4%;
 
 }
 
@@ -27,8 +90,6 @@ body {
 
 }
 
-
-
 .slider-inner img {
     aspect-ratio: 16/9;
     object-fit: cover;
@@ -38,32 +99,77 @@ img {
     width: 100%;
 }
 
-.section-container {
-    width: 90%;
-    margin: 0 4%;
+/*BOTON FLOTANTE WS*/
+
+.btn-flotante {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    transition: all 300ms ease 0ms;
+    z-index: 99;
+    width: 90px;
+
 }
 
-.section-inner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 4%;
+.btn-flotante:hover {
+    transform: translateY(-7px);
 }
 
-.section-inner a {
-    text-decoration: none;
+footer {
     text-align: center;
-    font-family: sans-serif;
-    font-size: large;
-    color: #333;
+    margin: 4em;
 }
 
 
-.section-inner img {
-    display: flex;
-    overflow: hidden;
-    object-fit: cover;
-    max-width: 430px;
-    aspect-ratio: 2/1;
+@media screen and (max-width: 550px) {
 
+    .btn-flotante {
+        bottom: auto;
+    }
+
+    .slider-inner {
+        margin-top: 5rem;
+    }
+
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+
+        cursor: pointer;
+    }
+
+    .cerrar-menu {
+        color: #211212;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0;
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+        background-color: black;
+    }
+
+    .nav-list li a {
+        color: #548CA8;
+    }
 }

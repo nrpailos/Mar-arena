@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*INDEX PRODU*/
+.section-container {
+    width: 100%;
+}
+
+.section-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+.section-inner a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    color: #333;
+    margin-top: 5em;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Noto Serif JP', serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Tilt Neon', sans-serif;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    height: 400px;
+}
+
+.section-inner p {
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+.section-inner img {
+    display: flex;
+    overflow: hidden;
+    object-fit: cover;
+    aspect-ratio: 2/1;
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 50px;
+    text-transform: uppercase;
+
+}
+
+.container {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+}
+
+/*GALERIAS DE FOTOS */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    margin-top: 6em;
+}
+
+.gallery img {
+    width: 100%;
+
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    /* Coloca el lightbox por encima de todo */
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
